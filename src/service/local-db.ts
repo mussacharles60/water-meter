@@ -14,6 +14,18 @@ export const db = {
         volume_purchased: 500,
       },
     },
+    {
+      id: "device-2",
+      name: "My other meter",
+      description: "This is my other meter",
+      location: "Dar es salaam",
+      status: {
+        volume: 2500,
+        volume_unit: "l", // litres
+        percent_usage: 50.0,
+        volume_purchased: 5000,
+      },
+    },
   ],
   "users": [
     {
@@ -45,6 +57,56 @@ export const db = {
     {
       user_id: "user-1",
       device_id: "device-1",
+      role: "owner",
+    },
+    {
+      user_id: "user-1",
+      device_id: "device-2",
+      role: "owner",
+    },
+    {
+      user_id: "user-1",
+      device_id: "device-3",
+      role: "user",
+    },
+    {
+      user_id: "user-1",
+      device_id: "device-4",
+      role: "owner",
+    },
+    {
+      user_id: "user-1",
+      device_id: "device-5",
+      role: "user",
+    },
+    {
+      user_id: "user-1",
+      device_id: "device-6",
+      role: "user",
+    },
+    {
+      user_id: "user-1",
+      device_id: "device-7",
+      role: "user",
+    },
+    {
+      user_id: "user-1",
+      device_id: "device-8",
+      role: "owner",
+    },
+    {
+      user_id: "user-1",
+      device_id: "device-9",
+      role: "owner",
+    },
+    {
+      user_id: "user-1",
+      device_id: "device-10",
+      role: "owner",
+    },
+    {
+      user_id: "user-1",
+      device_id: "device-11",
       role: "owner",
     },
     {
@@ -167,6 +229,556 @@ export const devices_api = [
         name: "User ###",
         email: "user@gmail.com",
         role: "user",
+      },
+    ],
+  },
+  {
+    id: "device-2",
+    name: "My other meter",
+    description: "This is my other meter",
+    location: "Dar es salaam",
+    status: {
+      volume: 2500, // litres
+      percent_usage: 50.0,
+      volume_purchased: 5000,
+      usage: [
+        {
+          date: 1,
+          volume: 20,
+        },
+        {
+          date: 2,
+          volume: 18,
+        },
+        {
+          date: 3,
+          volume: 50,
+        },
+        {
+          date: 4,
+          volume: 80.5,
+        },
+        {
+          date: 5,
+          volume: 30.2,
+        },
+        {
+          date: 6,
+          volume: 20,
+        },
+        {
+          date: 7,
+          volume: 5,
+        },
+      ],
+    },
+    users: [
+      {
+        user_id: "user-1",
+        name: "Mussa Charles",
+        email: "mussacharles60@gmail.com",
+        role: "owner",
+      },
+      {
+        user_id: "user-2",
+        name: "Robert",
+        email: "robert@gmail.com",
+        role: "owner",
+      },
+    ],
+  },
+  {
+    id: "device-3",
+    name: "Meter no. 3",
+    description: "This is meter no. 3",
+    location: "Dar es salaam",
+    status: {
+      volume: 2500, // litres
+      percent_usage: 50.0,
+      volume_purchased: 5000,
+      usage: [
+        {
+          date: 1,
+          volume: 20,
+        },
+        {
+          date: 2,
+          volume: 18,
+        },
+        {
+          date: 3,
+          volume: 50,
+        },
+        {
+          date: 4,
+          volume: 80.5,
+        },
+        {
+          date: 5,
+          volume: 30.2,
+        },
+        {
+          date: 6,
+          volume: 20,
+        },
+        {
+          date: 7,
+          volume: 5,
+        },
+      ],
+    },
+    users: [
+      {
+        user_id: "user-1",
+        name: "Mussa Charles",
+        email: "mussacharles60@gmail.com",
+        role: "owner",
+      },
+      {
+        user_id: "user-2",
+        name: "Robert",
+        email: "robert@gmail.com",
+        role: "owner",
+      },
+    ],
+  },
+  {
+    id: "device-4",
+    name: "Meter no. 4",
+    description: "This is meter no. 4",
+    location: "Dar es salaam",
+    status: {
+      volume: 4500, // litres
+      percent_usage: 45.0,
+      volume_purchased: 10000,
+      usage: [
+        {
+          date: 1,
+          volume: 20,
+        },
+        {
+          date: 2,
+          volume: 18,
+        },
+        {
+          date: 3,
+          volume: 50,
+        },
+        {
+          date: 4,
+          volume: 80.5,
+        },
+        {
+          date: 5,
+          volume: 30.2,
+        },
+        {
+          date: 6,
+          volume: 20,
+        },
+        {
+          date: 7,
+          volume: 5,
+        },
+      ],
+    },
+    users: [
+      {
+        user_id: "user-1",
+        name: "Mussa Charles",
+        email: "mussacharles60@gmail.com",
+        role: "owner",
+      },
+      {
+        user_id: "user-2",
+        name: "Robert",
+        email: "robert@gmail.com",
+        role: "owner",
+      },
+    ],
+  },
+  {
+    id: "device-5",
+    name: "Meter no. 5",
+    description: "This is meter no. 5",
+    location: "Dar es salaam",
+    status: {
+      volume: 2550, // litres
+      percent_usage: 52.50,
+      volume_purchased: 5000,
+      usage: [
+        {
+          date: 1,
+          volume: 20,
+        },
+        {
+          date: 2,
+          volume: 18,
+        },
+        {
+          date: 3,
+          volume: 50,
+        },
+        {
+          date: 4,
+          volume: 80.5,
+        },
+        {
+          date: 5,
+          volume: 30.2,
+        },
+        {
+          date: 6,
+          volume: 20,
+        },
+        {
+          date: 7,
+          volume: 5,
+        },
+      ],
+    },
+    users: [
+      {
+        user_id: "user-1",
+        name: "Mussa Charles",
+        email: "mussacharles60@gmail.com",
+        role: "owner",
+      },
+      {
+        user_id: "user-2",
+        name: "Robert",
+        email: "robert@gmail.com",
+        role: "owner",
+      },
+    ],
+  },
+  {
+    id: "device-6",
+    name: "Meter no. 6",
+    description: "This is meter no. 6",
+    location: "Dar es salaam",
+    status: {
+      volume: 5000, // litres
+      percent_usage: 50.0,
+      volume_purchased: 10000,
+      usage: [
+        {
+          date: 1,
+          volume: 20,
+        },
+        {
+          date: 2,
+          volume: 18,
+        },
+        {
+          date: 3,
+          volume: 50,
+        },
+        {
+          date: 4,
+          volume: 80.5,
+        },
+        {
+          date: 5,
+          volume: 30.2,
+        },
+        {
+          date: 6,
+          volume: 20,
+        },
+        {
+          date: 7,
+          volume: 5,
+        },
+      ],
+    },
+    users: [
+      {
+        user_id: "user-1",
+        name: "Mussa Charles",
+        email: "mussacharles60@gmail.com",
+        role: "owner",
+      },
+      {
+        user_id: "user-2",
+        name: "Robert",
+        email: "robert@gmail.com",
+        role: "owner",
+      },
+    ],
+  },
+  {
+    id: "device-7",
+    name: "Meter no. 7",
+    description: "This is meter no. 7",
+    location: "Dar es salaam",
+    status: {
+      volume: 6000, // litres
+      percent_usage: 60.0,
+      volume_purchased: 10000,
+      usage: [
+        {
+          date: 1,
+          volume: 20,
+        },
+        {
+          date: 2,
+          volume: 18,
+        },
+        {
+          date: 3,
+          volume: 50,
+        },
+        {
+          date: 4,
+          volume: 80.5,
+        },
+        {
+          date: 5,
+          volume: 30.2,
+        },
+        {
+          date: 6,
+          volume: 20,
+        },
+        {
+          date: 7,
+          volume: 5,
+        },
+      ],
+    },
+    users: [
+      {
+        user_id: "user-1",
+        name: "Mussa Charles",
+        email: "mussacharles60@gmail.com",
+        role: "owner",
+      },
+      {
+        user_id: "user-2",
+        name: "Robert",
+        email: "robert@gmail.com",
+        role: "owner",
+      },
+    ],
+  },
+  {
+    id: "device-8",
+    name: "Meter no. 8",
+    description: "This is meter no. 8",
+    location: "Dar es salaam",
+    status: {
+      volume: 7500, // litres
+      percent_usage: 75.0,
+      volume_purchased: 10000,
+      usage: [
+        {
+          date: 1,
+          volume: 20,
+        },
+        {
+          date: 2,
+          volume: 18,
+        },
+        {
+          date: 3,
+          volume: 50,
+        },
+        {
+          date: 4,
+          volume: 80.5,
+        },
+        {
+          date: 5,
+          volume: 30.2,
+        },
+        {
+          date: 6,
+          volume: 20,
+        },
+        {
+          date: 7,
+          volume: 5,
+        },
+      ],
+    },
+    users: [
+      {
+        user_id: "user-1",
+        name: "Mussa Charles",
+        email: "mussacharles60@gmail.com",
+        role: "owner",
+      },
+      {
+        user_id: "user-2",
+        name: "Robert",
+        email: "robert@gmail.com",
+        role: "owner",
+      },
+    ],
+  },
+  {
+    id: "device-9",
+    name: "Meter no. 9",
+    description: "This is meter no. 9",
+    location: "Dar es salaam",
+    status: {
+      volume: 3500, // litres
+      percent_usage: 30.0,
+      volume_purchased: 9000,
+      usage: [
+        {
+          date: 1,
+          volume: 20,
+        },
+        {
+          date: 2,
+          volume: 18,
+        },
+        {
+          date: 3,
+          volume: 50,
+        },
+        {
+          date: 4,
+          volume: 80.5,
+        },
+        {
+          date: 5,
+          volume: 30.2,
+        },
+        {
+          date: 6,
+          volume: 20,
+        },
+        {
+          date: 7,
+          volume: 5,
+        },
+      ],
+    },
+    users: [
+      {
+        user_id: "user-1",
+        name: "Mussa Charles",
+        email: "mussacharles60@gmail.com",
+        role: "owner",
+      },
+      {
+        user_id: "user-2",
+        name: "Robert",
+        email: "robert@gmail.com",
+        role: "owner",
+      },
+    ],
+  },
+  {
+    id: "device-10",
+    name: "Meter no. 10",
+    description: "This is meter no. 10",
+    location: "Dar es salaam",
+    status: {
+      volume: 5000, // litres
+      percent_usage: 100.0,
+      volume_purchased: 5000,
+      usage: [
+        {
+          date: 1,
+          volume: 20,
+        },
+        {
+          date: 2,
+          volume: 18,
+        },
+        {
+          date: 3,
+          volume: 50,
+        },
+        {
+          date: 4,
+          volume: 80.5,
+        },
+        {
+          date: 5,
+          volume: 30.2,
+        },
+        {
+          date: 6,
+          volume: 20,
+        },
+        {
+          date: 7,
+          volume: 5,
+        },
+      ],
+    },
+    users: [
+      {
+        user_id: "user-1",
+        name: "Mussa Charles",
+        email: "mussacharles60@gmail.com",
+        role: "owner",
+      },
+      {
+        user_id: "user-2",
+        name: "Robert",
+        email: "robert@gmail.com",
+        role: "owner",
+      },
+    ],
+  },
+  {
+    id: "device-11",
+    name: "Meter no. 11",
+    description: "This is meter no. 11",
+    location: "Dar es salaam",
+    status: {
+      volume: 5000, // litres
+      percent_usage: 100.0,
+      volume_purchased: 5000,
+      usage: [
+        {
+          date: 1,
+          volume: 20,
+        },
+        {
+          date: 2,
+          volume: 18,
+        },
+        {
+          date: 3,
+          volume: 50,
+        },
+        {
+          date: 4,
+          volume: 80.5,
+        },
+        {
+          date: 5,
+          volume: 30.2,
+        },
+        {
+          date: 6,
+          volume: 20,
+        },
+        {
+          date: 7,
+          volume: 5,
+        },
+      ],
+    },
+    users: [
+      {
+        user_id: "user-1",
+        name: "Mussa Charles",
+        email: "mussacharles60@gmail.com",
+        role: "owner",
+      },
+      {
+        user_id: "user-2",
+        name: "Robert",
+        email: "robert@gmail.com",
+        role: "owner",
       },
     ],
   },
