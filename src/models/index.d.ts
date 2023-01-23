@@ -33,6 +33,7 @@ export type UserDeviceData = {
   name: string,
   description: string,
   location: string,
+  last_updated: number,
   status: {
     volume: number,
     percent_usage: number
