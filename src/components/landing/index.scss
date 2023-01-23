@@ -1,0 +1,138 @@
+.landing-main {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    position: relative;
+    background: var(--color-primary);
+
+    .header-lay {
+        width: 100%;
+        height: var(--iot-header-height);
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        flex-shrink: 0;
+        position: relative;
+        background: var(--color-secondary);
+        border-bottom: 1px solid var(--color-border);
+
+        .ttle-txt {
+            width: auto;
+            height: auto;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 16px;
+            color: var(--color-txt-pri);
+            font-weight: bold;
+        }
+
+        .user-lay {
+            width: auto;
+            height: auto;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            position: absolute;
+            top: 50%;
+            right: 8px;
+            transform: translateY(-50%);
+            background: var(--color-secondary);
+            border: 1px solid var(--color-border);
+            border-radius: 50px;
+            padding: 4px 8px;
+            text-decoration: none;
+
+            .user-ic {
+                font-size: 20px;
+                color: var(--color-edit-txt-sec);
+                margin: 0 8px 0 16px;
+            }
+
+            .user-txt {
+                font-size: 13px;
+                color: var(--color-edit-txt-sec);
+                margin: 0 8px 0 16px;
+            }
+        }
+    }
+
+    .body-lay {
+        width: 100%;
+        height: calc(100% - var(--iot-header-height));
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        flex-shrink: 0;
+        position: relative;
+        background: var(--color-secondary);
+        overflow-x: hidden;
+        overflow-y: auto;
+
+        .first-lay {
+            width: 100%;
+            height: 250px;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+
+            .left-lay {
+                width: 50%;
+                height: 100%;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                flex-shrink: 0;
+                position: relative;
+
+                .link-btn {
+                    width: auto;
+                    height: auto;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    position: relative;
+                    background: var(--color-txt-pri);
+                    // border: 1px solid var(--color-border);
+                    border-radius: 8px;
+                    font-size: 15px;
+                    font-weight: bold;
+                    color: var(--color-edit-txt-active);
+                    padding: 8px 16px;
+                    text-decoration: none;
+                    cursor: pointer;
+                    box-shadow: 0px 0px 4px 2px var(--color-shadow);
+
+                    &:hover {
+                        background: var(--color-action-active-hover);
+                    }
+                }
+            }
+
+            .right-lay {
+                width: 50%;
+                height: 100%;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                flex-shrink: 0;
+                position: relative;
+            }
+        }
+    }
+}
