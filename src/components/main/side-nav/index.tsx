@@ -1,7 +1,8 @@
-import { FaHome, FaSignOutAlt, FaTachometerAlt } from 'react-icons/fa';
+import { FaHome, FaSignOutAlt, FaTachometerAlt, FaUserAlt } from 'react-icons/fa';
 import { Link, useHistory } from 'react-router-dom';
 import Routes from '../../../utils/routes';
 import './index.scss';
+import { BsSpeedometer } from 'react-icons/bs';
 
 type Props = {
   onLogOutBtnClick: () => void;
@@ -25,11 +26,11 @@ const SideNav = (props: Props) => {
           <span className='link-text'>Dashboard</span>
         </Link>
         <Link to={Routes.Devices} className={`link-btn ${history.location.pathname.startsWith(Routes.Devices) ? 'also-active' : ''}`}>
-          <FaTachometerAlt className='link-icon' />
-          <span className='link-text'>Devices</span>
+          <BsSpeedometer className='link-icon' />
+          <span className='link-text'>Meters</span>
         </Link>
         <Link to={Routes.Account} className={`link-btn ${history.location.pathname.startsWith(Routes.Account) ? 'also-active' : ''}`}>
-          <FaTachometerAlt className='link-icon' />
+          <FaUserAlt className='link-icon' />
           <span className='link-text'>Account</span>
         </Link>
       </div>
