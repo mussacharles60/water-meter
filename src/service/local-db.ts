@@ -222,6 +222,43 @@ export default class API {
     }
   };
 
+  public static getUserData = (userId: string): APIResponce => {
+    let user: User | null = null;
+    for (let i = 0; i < db.users.length; i++) {
+      const u = db.users[i];
+      if (u.id === userId) {
+        user = u;
+        break;
+      }
+    }
+    if (user) {
+      return {
+        success: {
+          code: 200,
+          message: 'returned user data',
+          data: [
+            {
+              user: {
+                id: user.id,
+                name: user.name,
+                email: user.email,
+                phone: user.phone,
+              },
+              devices: devices_api,
+            }
+          ]
+        }
+      }
+    } else {
+      return {
+        error: {
+          code: 500,
+          message: 'user not found'
+        }
+      }
+    }
+  }
+
   public static getDevicesByUser = (userId: string): Device[] => {
 
     const user_devices_ids: string[] = [];

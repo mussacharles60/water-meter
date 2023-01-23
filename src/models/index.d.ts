@@ -27,3 +27,21 @@ export type DevicePurchase = {
   volume: number,
   price: number,
 }
+
+export type UserDeviceData = {
+  id: string,
+  name: string,
+  description: string,
+  location: string,
+  status: {
+    volume: number,
+    percent_usage: number
+    volume_purchased: number
+  },
+  users: User[],
+}
+
+export type UserData = {
+  user: User,
+  devices: UserDevicedata[],
+}

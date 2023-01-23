@@ -271,6 +271,11 @@ export default class DatabaseManager {
     }
 
     public getUserDevices(user_id: string): Promise<void> {
+
+        return new Promise((resolve, reject) => {
+            resolve(API.getUserData(user_id) as any);
+        });
+
         window.dispatchEvent(new CustomEvent('data-loading', { detail: true }));
 
         const formData = new FormData();

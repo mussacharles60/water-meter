@@ -8,4 +8,88 @@
     flex-shrink: 0;
     position: relative;
     background: var(--color-secondary);
+
+    .first-ly {
+        width: calc(100% - 16px);
+        height: auto;
+        min-height: 200px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        position: relative;
+        background: var(--color-secondary);
+        border: 1px solid var(--color-border);
+        border-radius: 8px;
+        margin: 8px;
+        padding: 12px 8px;
+
+        .img-lay {
+            width: 120px;
+            height: 120px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            background: var(--color-primary);
+            border: 1px solid var(--color-border);
+            border-radius: 50%;
+
+            .img-tp {
+                width: 100%;
+                height: 100%;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                position: absolute;
+                z-index: 1;
+            }
+
+            .img {
+                width: calc(100% - 4px);
+                height: calc(100% - 4px);
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                position: relative;
+                object-fit: cover;
+                object-position: center;
+                image-rendering: pixelated;
+                padding: 4px;
+                border-radius: 50%;
+            }
+        }
+
+        .info-lay {
+            width: 100%;
+            height: auto;
+            max-width: 400px;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: center;
+            position: relative;
+
+            .info-text {
+                width: 100%;
+                height: auto;
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+                position: relative;
+                font-size: 16px;
+                color: var(--color-edit-txt);
+                margin: 8px;
+            }
+
+            .also-title {
+                font-size: 20px;
+                font-weight: bold;
+            }
+        }
+    }
 }

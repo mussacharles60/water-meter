@@ -6,8 +6,8 @@
     justify-content: flex-start;
     align-items: center;
     position: relative;
-    background: var(--color-secondary);
-    border-right: 1px solid var(--color-border);
+    background: var(--color-action);
+    // border-right: 1px solid var(--color-border);
 
     .header-lay {
         width: 100%;
@@ -18,8 +18,8 @@
         align-items: center;
         flex-shrink: 0;
         position: relative;
-        background: var(--color-secondary);
-        border-bottom: 1px solid var(--color-border);
+        // background: var(--color-secondary);
+        // border-bottom: 1px solid var(--color-border);
 
         .ttle-txt {
             width: auto;
@@ -34,6 +34,7 @@
             transform: translate(-50%, -50%);
             font-size: 14px;
             color: var(--color-txt-pri);
+            color: white;
             font-weight: bold;
         }
     }
@@ -68,6 +69,7 @@
             .link-icon {
                 font-size: 20px;
                 color: var(--color-edit-txt);
+                color: var(--color-edit-txt-active);
                 display: flex;
                 flex-direction: column;
                 justify-content: center;
@@ -79,6 +81,7 @@
 
             .link-text {
                 color: var(--color-edit-txt);
+                color: var(--color-edit-txt-active);
                 font-family: Lato, sans-serif;
                 font-size: 1rem;
                 left: 40px;
@@ -139,13 +142,12 @@
         .logout-btn-cont {
             width: 100%;
             height: 60px;
-            position: relative;
-            z-index: 2;
             display: flex;
             flex-direction: column;
             justify-content: center;
             align-items: center;
             flex-shrink: 0;
+            position: relative;
             box-sizing: border-box;
 
             .logout-btn {
@@ -167,11 +169,13 @@
                 .logout-icon {
                     color: var(--color-icon);
                     color: var(--color-edit-txt);
+                    color: var(--color-edit-txt-active);
                 }
 
                 .logout-text {
                     color: var(--color-edit-txt);
                     color: var(--color-edit-txt);
+                    color: var(--color-edit-txt-active);
                 }
 
                 &:hover {
@@ -189,6 +193,7 @@
                 .logout-icon {
                     font-size: 20px;
                     color: var(--color-edit-txt);
+                    color: var(--color-edit-txt-active);
                     display: flex;
                     flex-direction: column;
                     justify-content: center;
@@ -200,12 +205,75 @@
 
                 .logout-text {
                     color: var(--color-edit-txt);
+                    color: var(--color-edit-txt-active);
                     font-family: Lato, sans-serif;
                     font-size: 1rem;
                     left: 40px;
                     letter-spacing: 2px;
                     margin: 0 8px 0 16px;
                     position: absolute;
+                }
+            }
+        }
+
+        .pallete-container {
+            width: 100%;
+            height: 60px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            cursor: pointer;
+
+            .switch {
+                width: 80px;
+                height: 40px;
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+                position: relative;
+
+                .toggle-thumb {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    right: 0;
+                    bottom: 0;
+                    background: var(--color-secondary);
+                    border: 1px solid var(--color-border);
+                    border-radius: 50px;
+                    cursor: pointer;
+
+                    &:before {
+                        content: "";
+                        height: 26px;
+                        width: 26px;
+                        position: absolute;
+                        top: 50%;
+                        left: 2px;
+                        transform: translateY(-50%);
+                        border-radius: 50%;
+                        background: var(--color-pallete-toggle);
+                        transition: .4s all ease;
+                    }
+                }
+
+                .checkbox {
+                    opacity: 0;
+                    width: 0;
+                    height: 0;
+                }
+
+                .checkbox:checked+.toggle-thumb:before {
+                    position: absolute;
+                    top: 50%;
+                    left: 2px;
+                    transform: translate(38px, -50%);
                 }
             }
         }
