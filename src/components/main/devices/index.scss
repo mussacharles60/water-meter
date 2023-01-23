@@ -22,7 +22,7 @@
 
         .header-lay {
             width: 100%;
-            height: var(--iot-header-height);
+            height: var(--iot-header-height-sm);
             display: flex;
             flex-direction: row;
             justify-content: flex-start;
@@ -51,7 +51,7 @@
 
         .body-lay {
             width: 100%;
-            height: calc(100% - var(--iot-header-height));
+            height: calc(100% - var(--iot-header-height-sm));
             display: flex;
             flex-direction: column;
             justify-content: flex-start;
