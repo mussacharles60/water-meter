@@ -1,0 +1,32 @@
+{
+    "defaultSeverity": "error",
+    "extends": [
+        "tslint:latest"
+    ],
+    "jsRules": {},
+    "rules": {
+        "trailing-comma": [false],
+        "variable-name": [
+            false,
+            "allow-leading-underscore"
+        ],
+        "no-shadowed-variable": [false],
+        "no-console": [false],
+        "jsdoc-format": [false],
+        "no-empty": [false],
+        "no-var-requires": [false],
+        "max-classes-per-file": [false],
+        "triple-equals": [false],
+        "no-submodule-imports": [false],
+        "no-implicit-dependencies": [false],
+        "radix": [false],
+        "no-bitwise": [false],
+        "prefer-for-of": [false]
+    },
+    "rulesDirectory": [],
+    "linterOptions": {
+        "exclude": [
+            "src/*"
+        ]
+    }
+}
